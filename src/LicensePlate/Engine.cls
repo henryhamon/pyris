@@ -15,6 +15,12 @@ ClassMethod Process(picture As %String) As %Status
 	Return sc
 }
 
+ClassMethod FindLicensePlate(plate As %String) As %Status
+{
+	Set sc = $$$OK
+	Return sc
+}
+
 ClassMethod VerifyImage(picture As %String) As %String [ Language = python ]
 {
 import cv2
